@@ -84,13 +84,13 @@
         <form class="principal__formulario" data-formulario>
           <fieldset class="formulario__campo">
             <label class="campo__etiqueta" for="nombre">Nombre</label>
-            <input name="nombre" id="nombre" class="campo__completo" type="text"/>
+            <input name="nombre" id="nombre" class="campo__completo" type="text" minlength="3"/>
             <span class="mensaje-error"></span>
           </fieldset>
 
           <fieldset class="formulario__campo">
             <label class="campo__etiqueta" for="email">E-mail</label>
-            <input name="email" id="email" class="campo__completo" type="email"/>
+            <input name="email" id="email" class="campo__completo" type="email" minlength="5"/>
             <span class="mensaje-error"></span>
           </fieldset>
           <fieldset class="formulario__campo">
@@ -100,7 +100,7 @@
             <input
               name="identificacion"
               id="identificacion"
-              class="campo__completo campo__completo--menor" type="text"
+              class="campo__completo campo__completo--menor" type="text" minlength="8"
             />
             <span class="mensaje-error"></span>
           </fieldset>
@@ -111,7 +111,7 @@
             <input
               name="cuil"
               id="cuil"
-              class="campo__completo campo__completo--menor" type="text"
+              class="campo__completo campo__completo--menor" type="text" minlength="10" maxlength="14"
             />
             <span class="mensaje-error"></span>
           </fieldset>
